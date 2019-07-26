@@ -1,0 +1,40 @@
+<div class="datas" *ngIf="datas | async as datas">
+  <div class="row">
+     <div class="col-md-4" style="padding-left: 45px;">
+        <div class="datas1">
+          <img  id="myimage" src="assets/andoried/{{datas.image}}">
+       
+         </div>
+       <div class="datas2">
+        <button class="btn btn-primary cart" (click)="senditem(datas)" >ADD CART</button>
+        <button class="btn btn-primary buy">BUY NOW</button>
+       
+       </div>
+     </div>
+     <div class="col-md-4">
+      <p><span class="el">Model:</span> <span>{{datas.name}}</span></p>
+      <p><span class="el">Rating:</span> <span>{{datas.id}}</span></p>
+      <p><span class="el">Price:</span> <span>{{datas.amount}}</span>&nbsp;<del>{{datas.offers}}</del></p>
+      <p><span class="el">Model:</span> <span>{{datas.title}}</span></p>
+      <p><span class="el">Ram:</span> <span>{{datas.ram}}</span></p>
+        <p><span class="el">Storage:</span> <span>{{datas.storage}}</span></p>
+
+                
+     </div>
+     <div class="col-md-4">
+        
+        
+        <p><span class="el">Battery:</span> <span>{{datas.battery}}</span></p>
+        <p><span class="el">Selfie:</span> <span>{{datas.selfie}}</span></p>
+        <p><span class="el">Screen:</span> <span>{{datas.screen}}</span></p>
+        <p><span class="el">Sim:</span> <span>{{datas.sim}}</span></p>
+        <p><span class="el">Vertion:</span> <span>{{datas.vertion}}</span></p>
+                  
+       </div>
+
+  </div>
+  
+  
+      
+ </div>
+ 

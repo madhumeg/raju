@@ -1,0 +1,25 @@
+
+p{
+    text-align: center;
+}
+.ass{
+    height:240px;
+    padding: 35px 70px 35px 70px;
+    background-color: #F7F8FC;
+}
+.ass:hover{
+    transform: skewY(23deg);
+    animation: skew 3s infinite;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    opacity: .7;
+}
+@keyframes skew {
+    0% {
+      transform: skewX(20deg);
+    }
+    100% {
+      transform: skewX(-20deg);
+    }
+  }
+  

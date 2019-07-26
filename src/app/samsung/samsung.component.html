@@ -1,0 +1,37 @@
+<div class="container" style="background-color: #0F4376;">
+   <div class="row">
+    
+      
+       
+        
+           
+          <button class="btn btn-info"  style="background-color: #0F4376;"(click)="toggleshow()">
+             
+            
+            
+            
+            
+            <i class="fa fa-caret-down">Fliter</i> 
+      </button>  
+            <div class="row container-fluid" *ngIf="show" id="divshow" >
+                <li class="link">
+                    <a  routerLink="/sam/" routerLinkActive="active">Samsung Android Phone</a>
+                  </li>
+                  <li class="link">
+                    <a routerLink="/sam/samandroid" routerLinkActive="active">Samsung Normal Phones</a>
+                  </li>
+            
+            </div>
+    </div>    
+</div>
+<div class="container">
+    <div class="row">
+    
+  
+  
+      
+          <router-outlet></router-outlet>
+    </div>
+      
+</div>
+

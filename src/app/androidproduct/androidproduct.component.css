@@ -1,0 +1,31 @@
+.img-zoom-container {
+    position: relative;
+  } 
+  
+  .img-zoom-lens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    /*set the size of the lens:*/
+    width: 40px;
+    height: 40px;
+  }
+  
+  .img-zoom-result {
+    border: 1px solid #d4d4d4;
+    /*set the size of the result div:*/
+    width: 300px;
+    height: 300px;
+  }
+  .cart{
+    padding: 13px 45px 13px 29px;
+    
+  }
+  .buy{
+    padding: 13px 45px 13px 29px;
+  }
+  .datas{
+    border:1px solid #ccc;
+  }
+  .el{
+    font-weight: 900;
+  }

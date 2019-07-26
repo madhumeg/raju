@@ -1,0 +1,42 @@
+.fil{
+    border: 1px solid;
+  
+    border: 1px solid #d2d2d2;
+    margin-top: 10px;
+}
+.fil1{
+    background: #e6e6e6;
+    color: #434343;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 14px;
+    
+}
+.fil2{
+   
+    color: #434343;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    border-bottom: 1px dashed #D5D5D5;
+}
+.fil3{
+    border-bottom: 1px dashed #D5D5D5;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    color:white;
+    font-size:14px;
+}
+.link{
+    padding: 10px 10px 10px 10px;
+    list-style-type: none;
+}
+

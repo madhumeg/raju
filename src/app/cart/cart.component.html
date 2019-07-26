@@ -1,0 +1,57 @@
+      <div style="border:1px solid lightgray;">
+
+        <div class="row" >
+          <div class="col-md-8">
+        <h3>Shopping Cart</h3>
+         <div class="hai">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">IMAGE</th>
+                    <th scope="col">PRODUCT NAME</th>
+                    <th scope="col">MODEL</th>
+                    <th scope="col">QUANTITY</th>
+                    <th scope="col">UNIT PRICE</th>
+                    <th scope="col">TOTAL</th>
+                  </tr>
+                </thead>
+                <tbody *ngFor="let m of  mobiledatas;let i=index">
+                  <tr class="table">
+                    <th scope="row"><img src="assets/SamsungImages/{{m.samsung}}"  style="height:50px;"></th>
+                    <td>{{m.Model}}</td>
+                    <td>{{m.name}}</td>
+                    <td><tr>
+                      <td><a class="text-black" (click)="increment(2)" role="button">
+                          <i class="fa fa-plus">+</i>
+                      </a></td>
+                      <td>{{number}}</td>
+                      <td> <a class="text-black" (click)="dicrement()" role="button">
+                          <i class="fa fa-minus">-</i>
+                      </a>
+                      </td>
+                      <td><i class="fa fa-remove "(click)="delete(i)"></i></td>
+                     </tr></td>
+                    <td>{{m.price}}</td>
+                    <td>2301</td>
+                  </tr>
+                 
+                 
+                  
+                 
+                </tbody>
+              </table>
+          
+       
+          
+          </div>
+         
+        </div>
+            <div class="col-md-3">
+                ORDER SUMMARY
+              <h4 >Total:{{totalPrice}}</h4>
+              <button class="btn btn-primary">Pay Now</button>
+            </div>
+          
+        </div>
+       
+      </div>

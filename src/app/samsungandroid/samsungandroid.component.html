@@ -1,0 +1,29 @@
+<div class="container">
+ <!----<div class="row">
+ <ngb-carousel *ngIf="images">
+  <ng-template ngbSlide *ngFor="let ima of images">
+    <img src="assets/{{ima.image}}" alt="Random first slide">
+    <div class="carousel-caption">
+      <h3 style="padding-bottom:23px;">{{ima.title}}</h3>
+      <h5 style="padding-bottom:20px;">{{ima.title1}}</h5>
+  
+    </div>
+  </ng-template>
+ 
+</ngb-carousel>
+</div>-->
+  <div class="row">
+    <div  class="col-md-3" style="margin-top: 30px;" [@buttonState]="state" (click)="onselected(sam)" *ngFor="let sam of androiedimages" >
+      <div class="he">
+       <img class="ass"src="assets\andoried/{{sam.image}}">
+        <p class="gu">{{sam.name}} </p>
+       <!---- <p class="gu">{{sam.selfie}}</p>
+        <p class="gu">{{sam.screen}}</p>-->
+        <p ><span>{{sam.amount}}<span> &nbsp;&nbsp;<del>₹11,290</del></span><span style="color:green;"> &nbsp;&nbsp;5% off</span></span> &nbsp;<span style="background-color:green; color:white; width:20px;">4*</span></p>
+      </div>
+        
+    </div>
+    
+  </div>
+
+</div>

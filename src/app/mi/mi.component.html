@@ -1,0 +1,26 @@
+<div class="datas" *ngIf="datas | async as datas">
+   <div class="row">
+      <div class="col-md-4" style="padding-left: 45px;">
+         <div class="datas1">
+           <img src="assets/SamsungImages/{{datas.samsung}}">
+          </div>
+        <div class="datas2">
+         <button class="btn btn-primary cart" (click)="senditem(datas)" >ADD CART</button>
+         <button class="btn btn-primary buy">BUY NOW</button>
+        </div>
+      </div>
+      <div class="col-md-8">
+       <p><span class="el">Model:</span> <span>{{datas.Model}}</span></p>
+       <p><span class="el">Rating:</span> <span>{{datas.Rating}}</span></p>
+       <p><span class="el">Price:</span> <span>{{datas.price}}</span>&nbsp;<del>{{datas.offers}}</del></p>
+       
+                 
+      </div>
+
+
+   </div>
+   
+   
+       
+  </div>
+  

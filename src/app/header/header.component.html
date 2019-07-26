@@ -1,0 +1,101 @@
+<script>
+  $('ul.nav li.dropdown').hover(function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+});
+  </script>
+      <!---- <div class="container-fluied"> 
+       <div class="row">
+            <div class="col-md-4">
+              <p class="header1">Free shipping for all products</p>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4" style="display: flex;">
+                <p>&nbsp;&nbsp;&nbsp;Store locations</p>&nbsp;&nbsp;
+                <p style="border-left:1px solid rgba(169, 164, 164, 0.28); padding-left: 15px;"></p>
+                <p>Phone No:+1111111</p>
+                <p style="border-right:1px solid rgba(169, 164, 164, 0.28); padding-left: 15px;"></p>
+                <p><i class="fa fa-facebook"></i></p>
+                <p><i class="fa fa-twitter-square"></i></p>
+            </div>
+        </div>
+      </div>-->
+      <nav class="navbar navbar-expand-lg navbar-dark color topheader"> 
+
+         <div class="col-md-3">
+            <a class="navbar-brand" href="#"><img src="assets/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+         </div>
+        <!----<div class="col-md-2">
+            <div class="collapse navbar-collapse" id="navbarColor01">
+            
+              <form class="form-inline">
+                <input class="form-control search" type="text" placeholder="Search" >
+                
+              </form>
+            </div>
+        </div>-->
+        <div class="col-md-6">
+            <div class="collapse navbar-collapse" id="navbarColor01" style="float:right;">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown" data-toggle="dropdown">
+                      <a class="nav-link" href="#">MOBILE</a>
+                    <ul class="dropdown-menu mar">
+                    
+                      <a href="#" routerLink="sam"> <li class="mi">SAMSUNG</li></a>
+                      <a href="#" routerLink="mi"><li class="mi">MI </li></a>
+                    
+                    </ul>
+                   
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#">LAPTOP</a>
+                    <ul class="dropdown-menu  mar">
+                      
+                      <a href="#" routerLink="lenvo"> <li class="">Lenovo</li></a>
+                      <a href="#" routerLink="hp"> <li class="">Hp</li></a>
+                     
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown" >
+                    <a class="nav-link" href="#">TVs</a>
+                    <ul class="dropdown-menu  mar">
+                   
+                      <a href="#" routerLink="panason"> <li class="">Panasonic Tv</li></a>
+                      <a href="#" routerLink="sony">  <li class="">Sony Tv</li></a>
+                      
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown" >
+                      <a class="nav-link" href="#">Accessories</a>
+                      <ul class="dropdown-menu  mar">
+                     
+                        <a href="#" routerLink="washing"><li class="">Washing-machines</li></a>
+                        <a href="#" routerLink="refri"> <li class="">Refrigeratars</li></a>
+                        
+                      </ul>
+                    </li>
+                
+                </ul>
+                
+              </div>
+
+        </div>
+        <div class="col-md-3 sign">
+          <a href="#" routerLink="cart"><i class="sho fa fa-shopping-cart"  style="font-size:24px">cart</i></a>
+          <a href="#" routerLink="cart"><i class="sho fa fa-sign-in" style="font-size:24px"></i></a>
+            
+         
+        </div>
+  
+     </nav>
+  

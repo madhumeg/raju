@@ -1,0 +1,13 @@
+<div class="container-fluid">
+  <ngb-carousel *ngIf="images">
+  <ng-template ngbSlide *ngFor="let ima of images">
+    <img src="assets/{{ima.image}}" alt="Random first slide" style="width:1350px;">
+    <div class="carousel-caption">
+      <h3 style="padding-bottom:12px;width:500px;">{{ima.title}}</h3>
+      <h5 style="padding-bottom:75px;width:500px;">{{ima.title1}}</h5>
+    <button class="btn btn-primary now">Shop Now</button>
+    </div>
+  </ng-template>
+ 
+</ngb-carousel>
+</div>
